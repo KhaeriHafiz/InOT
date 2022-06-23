@@ -475,3 +475,39 @@ a {
   box-shadow: 6px 8px 15px 3px rgba(0, 0, 0, 0.44);
   z-index: 1;
 }
+
+/* btn table */
+.btn-table {
+  padding: 5px 30px;
+  border-radius: 5px;
+}
+
+.btn-table-edit {
+  background-color: rgb(53, 237, 151);
+  color: #fff;
+}
+.btn-table-edit:hover {
+  background-color: rgb(49, 214, 137);
+  color: gray;
+}
+
+.btn-table-delete {
+  background-color: rgb(237, 154, 53);
+  color: #fff;
+}
+.btn-table-delete:hover {
+  background-color: rgb(178, 132, 39);
+  color: gray;
+}
+
+.mar-sing {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+@media (max-width: 576px) {
+  .mar-sing {
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
