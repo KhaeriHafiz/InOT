@@ -637,3 +637,14 @@ ul {
     display: block;
   }
 }
+
+.ico-ot {
+  font-size: 3rem;
+  color: gray;
+}
+
+.text-ot {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
