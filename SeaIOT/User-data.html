@@ -1,0 +1,233 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <meta http-equiv="refresh" content="10" /> -->
+
+    <!-- google fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,200;0,300;0,400;0,500;1,200;1,300;1,400;1,500&display=swap"
+        rel="stylesheet">
+
+    <style>
+        * {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+    <!-- bootstraps -->
+    <link rel="stylesheet" href="../assets/css/plugin/bootstrap.min.css">
+    <!-- main -->
+    <link rel="stylesheet" href="../assets/css/main.css">
+    <link rel="stylesheet" href="../assets/css/plugin/circliful.css">
+
+
+
+    <!-- fontawesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css">
+    <title>SeaIOT : User Data</title>
+</head>
+
+<body>
+    <!-- nav hp -->
+    <div class="nav-hp" style="display:none" id="nav-hp">
+        <div class="nav-content-hp">
+            <div class="top">
+                <div class="logo" style="display:flex;">
+                    <h1 class="m-0 logo-cont ms-auto">InOT</h1>
+                    <a href="#" class="nav-hide ms-auto" onclick="closing()">
+                        <i class="fa-solid fa-xmark"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="middle">
+                <ul class="ul-no">
+                    <a href="index.html" class="">
+                        <li class="li-co te-side">
+                            <span><i class="fa-brands fa-hashnode te-ico"></i>Dashboard</span>
+                        </li>
+                    </a>
+                    <!-- <a href="statistic.html">
+                        <li class="li-co te-side">
+                            <span><i class="fa-solid fa-chart-line te-ico"></i>Statistics</span>
+                        </li>
+                    </a> -->
+                    <a href="list-sensor.html">
+                        <li class="li-co te-side">
+                            <span><i class="fa-solid fa-list te-ico"></i>List Sensor</span>
+                        </li>
+                    </a>
+                    <!-- <a href="#">
+                        <li class="li-co te-side">
+                            <span><i class="fa-solid fa-gears te-ico"></i>Setting</span>
+                        </li>
+                    </a> -->
+                    <li class="treeview">
+                        <a class="li-co te-side" href="#" data-toggle="treeview"></i><span class="app-menu__label"><i
+                                    class="fa-solid fa-user-gear te-ico"></i>User
+                                Menu</span><i class="treeview-indicator fa fa-angle-right ms-auto"></i></a>
+                        <ul class="treeview-menu">
+                            <a href="User-data.html">
+                                <li class="li-co te-side"><span><i class="ico-list fa-solid fa-circle-dot te-ico"
+                                            style="font-size: 10px;"></i>User Data</span>
+                                </li>
+                            </a>
+                            <a href="User-setting.html">
+                                <li class="li-co te-side"><span><i class="ico-list fa-solid fa-circle-dot te-ico"
+                                            style="font-size: 10px;"></i>User Setting</span>
+                                </li>
+                            </a>
+                        </ul>
+                    </li>
+                    <!-- <a href="user.html">
+                        <li class="li-co te-side">
+                            <span><i class="fa-solid fa-user te-ico"></i>Users</span>
+                        </li>
+                    </a> -->
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- end nav hp -->
+    <div class="main">
+        <div class="sidebar-blex">
+            <div class="nav-content">
+                <div class="top">
+                    <div class="logo">
+                        <h1 class="m-0 logo-cont">SeaIOT</h1>
+                    </div>
+                </div>
+                <div class="middle">
+                    <ul class="ul-no">
+                        <a href="index.html" class="">
+                            <li class="li-co te-side">
+                                <span><i class="fa-brands fa-hashnode te-ico"></i>Dashboard</span>
+                            </li>
+                        </a>
+                        <!-- <a href="statistic.html">
+                            <li class="li-co te-side">
+                                <span><i class="fa-solid fa-chart-line te-ico"></i>Statistics</span>
+                            </li>
+                        </a> -->
+                        <a href="list-sensor.html">
+                            <li class="li-co te-side">
+                                <span><i class="fa-solid fa-list te-ico"></i>List Sensor</span>
+                            </li>
+                        </a>
+                        <!-- <a href="#">
+                            <li class="li-co te-side">
+                                <span><i class="fa-solid fa-gears te-ico"></i>Setting</span>
+                            </li>
+                        </a> -->
+                        <li class="treeview">
+                            <a class="li-co te-side" href="#" data-toggle="treeview"></i><span
+                                    class="app-menu__label"><i class="fa-solid fa-user-gear te-ico"></i>User
+                                    Menu</span><i class="treeview-indicator fa fa-angle-right ms-auto"></i></a>
+                            <ul class="treeview-menu">
+                                <a href="User-data.html">
+                                    <li class="li-co te-side"><span><i class="ico-list fa-solid fa-circle-dot te-ico"
+                                                style="font-size: 10px;"></i>User Data</span>
+                                    </li>
+                                </a>
+                                <a href="User-setting.html">
+                                    <li class="li-co te-side"><span><i class="ico-list fa-solid fa-circle-dot te-ico"
+                                                style="font-size: 10px;"></i>User Setting</span>
+                                    </li>
+                                </a>
+                            </ul>
+                        </li>
+                        <!-- <a href="user.html">
+                            <li class="li-co te-side">
+                                <span><i class="fa-solid fa-user te-ico"></i>Users</span>
+                            </li>
+                        </a> -->
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="navbar-blex">
+            <div class="nav-container">
+                <div class="nav-cont">
+                    <a href="#" class="nav-hide" onclick="showing()">
+                        <i class="fa-solid fa-bars"></i>
+                    </a>
+                    <div class="nav-item">
+                        <div class="item">
+                            <div class="pad">
+                                <div class="icon-nav mr-nav"><i class="fa-solid fa-message"></i>
+                                    <div class="counter">2</div>
+                                </div>
+                                <div class="icon-nav mr-nav"><i class="fa-solid fa-bell"></i>
+                                    <div class="counter">1</div>
+                                </div>
+                                <img class="avatar" src="../assets/image/avatar.png" alt="logo">
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <!-- content -->
+                <div style="color: #525252;">
+                    <h3><b>List Data</b></h3>
+                </div>
+                <div class="container">
+                    <div class="card bx-shadow">
+                        <div class="card-body">
+                            <div class="d-flex">
+                                <button type="button" class="btn btn-primary ms-auto">
+                                    Export Data
+                                </button>
+                            </div>
+                            <div class="table-responsive">
+                                <table class="table table-striped">
+                                    <thead>
+                                        <tr>
+                                            <th scope="col">No</th>
+                                            <th scope="col">Sensor Name</th>
+                                            <th scope="col">Data</th>
+                                            <th scope="col">Date</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <th scope="row">1</th>
+                                            <td>DHt 11</td>
+                                            <td>56</td>
+                                            <td>03, July - 2022 </td>
+                                        </tr>
+                                        <tr>
+                                            <th scope="row">2</th>
+                                            <td>Ultrasonic</td>
+                                            <td>22</td>
+                                            <td>03, July - 2022 </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- end content -->
+            </div>
+        </div>
+    </div>
+
+
+    <!-- js -->
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js'></script>
+    <script src="../assets/js/plugin/bootstrap.bundle.min.js"></script>
+    <script src="../assets/js/plugin/pie-chart.js"></script>
+    <script src="../assets/js/plugin/circliful.js"></script>
+    <script src="../assets/js/main.js"></script>
+    <!-- chart -->
+    <script src="https://cdn.jsdelivr.net/npm/chart.js@3.8.0/dist/chart.min.js"></script>
+
+
+
+
+</body>
+
+</html>
