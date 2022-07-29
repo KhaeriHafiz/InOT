@@ -691,3 +691,47 @@ ul {
 .slid {
   width: 100%;
 }
+
+.user-img {
+  width: 15rem;
+  height: 15rem;
+  background-size: cover;
+  border-radius: 5px;
+  /* margin-right: auto;
+  margin-left: auto; */
+}
+
+.main-body {
+  padding: 15px;
+}
+
+.avatar-id {
+  position: relative;
+}
+
+.chg-photo {
+  position: absolute;
+  right: 0;
+  bottom: 0;
+  background-color: #0084ff;
+  width: 42px;
+  height: 42px;
+  line-height: 33px;
+  overflow: hidden;
+  border-radius: 50%;
+}
+
+.chg-ico {
+  font-size: 25px;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+}
+
+.chg-photo input[type="file"] {
+  position: absolute;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  cursor: pointer;
+}
