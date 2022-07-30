@@ -254,7 +254,7 @@
     <!-- modal add sensor -->
     <!-- Modal -->
     <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-        <div class="modal-dialog modal-xl">
+        <div class="modal-dialog modal-lg modal-dialog-centered">
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Add Sensor</h5>
@@ -263,10 +263,29 @@
                 <div class="modal-body">
                     <div class="row">
                         <div class="col">
-                            <input class="form-control" type="text" placeholder="Sensor Name">
+                            <input type="text" class="form-control" id="sensorname" placeholder="Sensor Name">
                         </div>
                         <div class="col">
-                            <input class="form-control" type="text" placeholder="Sensor Name ..?">
+                            <div class="input-group mb-3">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Jenis Sensor</option>
+                                    <option value="1">Sensor 1</option>
+                                    <option value="2">Sensor 2</option>
+                                    <option value="3">Sensor 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Jenis Button</option>
+                                    <option value="1">Button 1</option>
+                                    <option value="2">Button 2</option>
+                                    <option value="3">Button 3</option>
+                                </select>
+                            </div>
+
                         </div>
                     </div>
                 </div>
