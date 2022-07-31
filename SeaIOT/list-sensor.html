@@ -199,8 +199,8 @@
                                             <td>1</td>
                                             <td class="text-at">
                                                 <div class="text-center d-flex">
-                                                    <button class="btn btn-success me-1" data-bs-toggle="tooltip"
-                                                        title="Edit">
+                                                    <button type="button" class="btn btn-success me-1"
+                                                        data-bs-toggle="modal" data-bs-target="#editModal">
                                                         <span><i class="fa-solid fa-pen-to-square"></i></span>
                                                     </button>
                                                     <button class="btn btn-danger ms-1" data-bs-toggle="tooltip"
@@ -216,14 +216,19 @@
                                             <td>1</td>
                                             <td class="text-at">
                                                 <div class="text-center d-flex">
-                                                    <button class="btn btn-success me-1" data-bs-toggle="tooltip"
-                                                        title="Edit">
+                                                    <button type="button" class="btn btn-success me-1"
+                                                        data-bs-toggle="modal" data-bs-target="#editModal">
                                                         <span><i class="fa-solid fa-pen-to-square"></i></span>
                                                     </button>
                                                     <button class="btn btn-danger ms-1" data-bs-toggle="tooltip"
                                                         title="Delete">
                                                         <span><i class="fa-solid fa-trash"></i></span>
                                                     </button>
+                                                    <!--  -->
+                                                    <!-- <button type="button" class="btn btn-primary ms-auto"
+                                                        data-bs-toggle="modal" data-bs-target="#exampleModal">
+                                                        Add Sensor
+                                                    </button> -->
                                                 </div>
                                             </td>
                                         </tr>
@@ -258,6 +263,52 @@
             <div class="modal-content">
                 <div class="modal-header">
                     <h5 class="modal-title" id="exampleModalLabel">Add Sensor</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col">
+                            <input type="text" class="form-control" id="sensorname" placeholder="Sensor Name">
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Jenis Sensor</option>
+                                    <option value="1">Sensor 1</option>
+                                    <option value="2">Sensor 2</option>
+                                    <option value="3">Sensor 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                        <div class="col">
+                            <div class="input-group mb-3">
+                                <select class="form-select" id="inputGroupSelect01">
+                                    <option selected>Jenis Button</option>
+                                    <option value="1">Button 1</option>
+                                    <option value="2">Button 2</option>
+                                    <option value="3">Button 3</option>
+                                </select>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- modal edit sensor -->
+    <!-- Modal -->
+    <div class="modal fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-xl modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="editModalLabel">Edit Sensor</h5>
                     <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
                 <div class="modal-body">
