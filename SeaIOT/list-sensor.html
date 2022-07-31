@@ -203,8 +203,8 @@
                                                         data-bs-toggle="modal" data-bs-target="#editModal">
                                                         <span><i class="fa-solid fa-pen-to-square"></i></span>
                                                     </button>
-                                                    <button class="btn btn-danger ms-1" data-bs-toggle="tooltip"
-                                                        title="Delete">
+                                                    <button type="button" class="btn btn-danger ms-1"
+                                                        data-bs-toggle="modal" data-bs-target="#deleteModal">
                                                         <span><i class="fa-solid fa-trash"></i></span>
                                                     </button>
                                                 </div>
@@ -220,8 +220,8 @@
                                                         data-bs-toggle="modal" data-bs-target="#editModal">
                                                         <span><i class="fa-solid fa-pen-to-square"></i></span>
                                                     </button>
-                                                    <button class="btn btn-danger ms-1" data-bs-toggle="tooltip"
-                                                        title="Delete">
+                                                    <button type="button" class="btn btn-danger ms-1"
+                                                        data-bs-toggle="modal" data-bs-target="#deleteModal">
                                                         <span><i class="fa-solid fa-trash"></i></span>
                                                     </button>
                                                     <!--  -->
@@ -348,6 +348,31 @@
         </div>
     </div>
 
+    <!-- modal delete -->
+    <!-- Modal -->
+    <div class="modal fade" id="deleteModal" tabindex="-1" aria-labelledby="deleteModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="deleteModalLabel">Warning</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="text-center">
+                        <h5 style="color:red">Are you sure want to delete. ?</h5>
+                    </div>
+                    <div class="d-flex">
+                        <button class="btn btn-danger me-2 ms-auto"><i class="fa-solid fa-trash"></i> Delete</button>
+                        <button class="btn btn-secondary me-auto">Cancel</button>
+                    </div>
+                </div>
+                <!-- <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div> -->
+            </div>
+        </div>
+    </div>
 
 
 
